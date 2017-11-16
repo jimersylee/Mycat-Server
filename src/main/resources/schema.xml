@@ -33,9 +33,9 @@
 	</schema>
 	<!-- <dataNode name="dn1$0-743" dataHost="localhost1" database="db$0-743"
 		/> -->
-	<dataNode name="dn1" dataHost="localhost1" database="db1" />
-	<dataNode name="dn2" dataHost="localhost1" database="db2" />
-	<dataNode name="dn3" dataHost="localhost1" database="db3" />
+	<dataNode name="dn1" dataHost="localhost1" database="mycat1" />
+	<dataNode name="dn2" dataHost="localhost1" database="mycat2" />
+	<dataNode name="dn3" dataHost="localhost1" database="mycat3" />
 	<!--<dataNode name="dn4" dataHost="sequoiadb1" database="SAMPLE" />
 	 <dataNode name="jdbc_dn1" dataHost="jdbchost" database="db1" />
 	<dataNode	name="jdbc_dn2" dataHost="jdbchost" database="db2" />
@@ -45,12 +45,12 @@
 		<heartbeat>select user()</heartbeat>
 		<!-- can have multi write hosts -->
 		<writeHost host="hostM1" url="localhost:3306" user="root"
-				   password="123456">
+				   password="">
 			<!-- can have multi read hosts -->
-			<readHost host="hostS2" url="192.168.1.200:3306" user="root" password="xxx" />
+			<!--<readHost host="hostS2" url="192.168.1.200:3306" user="root" password="xxx" />-->
 		</writeHost>
-		<writeHost host="hostS1" url="localhost:3316" user="root"
-				   password="123456" />
+		<!--<writeHost host="hostS1" url="localhost:3316" user="root"
+				   password="123456" />-->
 		<!-- <writeHost host="hostM2" url="localhost:3316" user="root" password="123456"/> -->
 	</dataHost>
 	<!--
